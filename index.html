@@ -2,25 +2,77 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title> Shammah's Portfolio </title>
     <style>
-        img {
+        /* img {
             position: absolute;
             display: block;
             margin-left: 650px;
             margin-right: auto;
             top: 10px
+        } */
+        h1,h2,h3,h4,h5,h6,p {
+            color: rgb(82, 81, 81);
+            line-height: 1.7;
         }
+       @media (min-width: 767px){ 
+            .top{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 24px;
+            padding: 64px;
+            }
+         }
+
+
+     @media (max-width:780px){
+
+                    .top{
+
+                     display:flex;
+                     flex-direction: column-reverse;
+                     
+
+                    }
+
+
+                }
+
+                @media (max-width:780px){
+
+                         img{
+                             width:100%;
+                         }
+
+                }
     </style>
-    <title> Shammah's Portfolio</title>
+         
+
 </head>
 
-<body style="background-color: #fff;">
-    <h1><br><span style="align: left; color:black">Hey there 👋,I am Shammah-star &#x1F60A </span></br></h1>
-    <h3><br><span style="align:left">I'm interested in website development.</span></br></h3>
-    <h3><br><span style="align:left">I'm currently learning it though.</span></br></h3>
-    <h3><br><span style="align:left"> My passion is to study animals. Apart from that, I love music and sightseeing.</span></br></h3>
-    <h3><br><span style="align:left">I aim to be known for something even though it may be small.</span></br></h3>
-    <img src="pic/mee.jpg" width="800" alt="me and sis">
+<body style="background-color:#fff;">
+
+    /* <!-- <h1><br><span style="align: left; color:black">Hey there 👋,I am Shammah-star &#x1F60A </span></br></h1> */
+    /* <h3><br><span style="align:left">I'm interested in website development.</span></br></h3> */
+    /* <h3><br><span style="align:left">I'm currently learning it though.</span></br></h3> */
+    /* <h3><br><span style="align:left"> My passion is to study animals. Apart from that, I love music and sightseeing.</span></br></h3> */
+    /* <h3><br><span style="align:left">I aim to be known for something even though it may be small.</span></br></h3> */
+    /* <img src="pic/mee.jpg" width="800" alt="me and sis"> --> */
+
+    <div class="container">
+        <div class="top">
+            <div class="about">
+                <h1> Hey there 👋 <br>I am Shammah-star &#x1F60A </h1>
+                <p>I'm interested in website development.</p>
+                <p>
+                     I'm currently learning it though. My passion is to study animals.  Apart from that,
+                     I love music and sightseeing. I aim to be known for something even though it may be small.
+                </p>
+            </div>
+            <img src="pic/mee.jpg" width="800" alt="me and sis">
+        </div>
+    </div>
 
 </body>
 
